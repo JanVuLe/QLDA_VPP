@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; /*hành động cuộn trang*/
+    background-color: rgb(228, 228, 228);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body{
+    max-width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/* menutrip */
+.menutrip{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menutrip .menutrip-nav li{
+    display: block; 
+}
+
+.menutrip .menutrip-nav{
+    display: flex;
+    margin: auto;
+}
+
+.menutrip .menutrip-nav li img{
+    height: 35px; 
+    /* display: grid;  */
+    margin: 6px auto;
+}
+
+.menutrip .menutrip-nav li a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 0 16px;
+}
+
+.menutrip-nav li a:hover{
+    color: rgb(255, 255, 255);
+    background: #ffffff4e;
+    font-weight: 600;
+    border-bottom: 2px solid #9c3fff;
+}
+/* end menutrip */
+
+/* icon_menutrip_taikhoan_giohang */
+
+.ti-icon{
+    display: flex;
+    color: #ffffff;
+    font-size: 18px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    padding: 0 16px;
+}
+.ti-bag{
+    margin-left: 12px;
+}
+
+.ti-icon:hover{
+    color: #ff80dd;
+    background-color: #ffffff;
+}
+/* end icon_menutrip_taikhoan_giohang */
+
+
+/* search */
+.head_main {
+    background-color: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.search {
+    width: 100%;
+    max-width: 500px;
+}
+
+.search form{
+    display: flex;
+}
+.search input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+.search button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #9539ff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.search button:hover {
+    background-color: #0056b3;
+}
+.search i {
+    font-size: 18px;
+}
+
+/* end search */
+
+/* body_main */
+.body_main{
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+.body_main .spthuhai{
+    background-color: #ffffff;
+}
+
+.body_main .title{
+    text-align: center;
+    padding: 10px 50px;
+    width: max-content;
+    font-family:monospace;
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+    background: linear-gradient(to right, #b947ff,#298dff, #f96fcb);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.body_main .data{
+    display: inline-flex;
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+}
+
+.khungsp{
+    margin: 8px;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #aaabf98e;
+}
+
+
+.khungsp:hover{
+    background-color: #d78df7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 4px rgba(79, 79, 79, 0.614);
+}
+
+input.soluong{
+    width: 18%;
+    float: left;
+    margin-top: 4px;
+    margin-left: 8%;
+    height: 22px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+}
+
+span.price{
+    float: right;
+    margin-left: 145px;
+    color: rgb(26, 120, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+span.gia{
+    float: right;
+    color: rgb(255, 1, 1);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input.themgiohang{
+    padding: 6px;
+    display: block;
+    margin: 0px auto 20px;
+    border-radius: 6px;
+    background-color: #f2a0ff;
+    border: none;
+}
+
+input.themgiohang:hover{
+    background-color: #fafafa;
+    padding: 9px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px rgb(79, 79, 79);
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+
+.head-footer{
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
+}
+
+.logo-lines-footer{
+    height: 80px;
+}
+
+.title_head-footer{
+    line-height: 80px;
+    font-size: 22px;
+    position: absolute;
+    margin: 25px 0px 0px 280px;
+    font-family: monospace;
+    font-weight: 600;
+    background: linear-gradient(to right,#ff7fee ,#8cb4f7, #a857ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ti-angle-up{
+    color: white;
+    font-weight: 800;
+    
+}
+.ti-angle-up:hover{
+    background: linear-gradient(to right,#ff7fee ,#8cb4f7, #a857ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer table{
+    color: white;
+    width: 80%;
+    margin: 18px auto;
+}
+
+.tbl-th-td{
+    /* border: 1px solid white; */
+    padding:0 16px;
+    text-align: left;
+    width: 15%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer table th{
+}
+
+footer table td{
+    vertical-align: top;
+}
+
+.ti-footer{
+    font-size: 25px;
+    margin-right: 6px;
+}
+
+.ti-lienket:hover{
+    font-size: 30px;
+    margin-left: 6px;
+    background: linear-gradient(to right,#ff7fee ,#8cb4f7, #a857ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.end-footer{
+    height: 200px;
+}
+
+.ti-html5{
+    color: rgb(244, 82, 33);
+}
+
+.ti-css3{
+    color: rgb(38, 85, 255);
+}
+
+.ti-html5:hover, .ti-css3:hover{
+    color: white;
+}

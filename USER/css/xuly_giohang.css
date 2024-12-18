@@ -1,0 +1,57 @@
+.thongtin-sanpham{
+    padding-bottom: 24px;
+}
+
+.thongtin-sanpham table{
+    margin: auto;
+    width: 100%;;
+    background: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.thongtin-sanpham table th{
+    border-bottom: 2px solid #b7b7b7;
+    height: 40px;
+}
+
+.thongtin-sanpham table td img{
+    height: 65px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #00000052;
+}
+
+.thongtin-sanpham table td{
+    border-bottom: 2px solid #a6a6a671;
+    text-align: center;
+    padding: 4px;
+}
+
+.thongtin-sanpham table td a{
+    text-decoration: none;
+    color: red;
+}
+.thongtin-sanpham table td input{
+    text-align: center;
+    width: 100px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5fff7a;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.thongtin-sanpham table td input:hover{
+    background-color: #00ff2a;
+    box-shadow: 0px 0px 5px 2px #ffffff52;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.thongtin-sanpham table .btn_thanhtoan{
+    width: 50px;
+}
+
